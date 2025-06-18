@@ -84,7 +84,7 @@ async function handleRequest(req: Request): Promise<Response> {
     return handleAPIRequest(req);
   }
 
-  return new Response('ok');
+  return handleAPIRequest(req);
 }
 
 Deno.serve(handleRequest); 
